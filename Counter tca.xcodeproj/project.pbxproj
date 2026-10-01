@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		72C115D52E269B2A00326A75 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 72C115D42E269B2A00326A75 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		72C115B62E2697D900326A75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C115D52E269B2A00326A75 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				72C115AA2E2697D700326A75 /* Counter tca */,
 				72C115B82E2697D900326A75 /* Counter tcaTests */,
 				72C115C22E2697D900326A75 /* Counter tcaUITests */,
+				72C115D32E269B2A00326A75 /* Frameworks */,
 				72C115A92E2697D700326A75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				72C115BF2E2697D900326A75 /* Counter tcaUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		72C115D32E269B2A00326A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = "Counter tca";
 			packageProductDependencies = (
+				72C115D42E269B2A00326A75 /* ComposableArchitecture */,
 			);
 			productName = "Counter tca";
 			productReference = 72C115A82E2697D700326A75 /* Counter tca.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 72C1159F2E2697D700326A75;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				72C115D22E2698E700326A75 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 72C115A92E2697D700326A75 /* Products */;
 			projectDirPath = "";
@@ -400,6 +417,7 @@
 				DEVELOPMENT_TEAM = 8R2D9WN3M3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Counter-tca-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +446,7 @@
 				DEVELOPMENT_TEAM = 8R2D9WN3M3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Counter-tca-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +577,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72C115D22E2698E700326A75 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72C115D42E269B2A00326A75 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72C115D22E2698E700326A75 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72C115A02E2697D700326A75 /* Project object */;
 }
